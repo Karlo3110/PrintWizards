@@ -3,8 +3,10 @@ import 'index.css'
 const Hero = () => {
   return (
     <div className="w-[full] h-[80vh] pattern-tech flex justify-center items-center flex-col">
-      <h1 className="text-8xl font-medium select-none">PrintWizards</h1>
-      <p className="text-2xl select-none">
+      <h1 className="text-4xl md:text-6xl lg:text-8xl font-medium select-none">
+        PrintWizards
+      </h1>
+      <p className="text-md md:text-2xl select-none">
         Transforming Your Ideas into Prints
       </p>
       <div className="flex justify-center items-center flex-wrap mt-4">

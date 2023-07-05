@@ -1,4 +1,4 @@
-import PersonCard from './PersonCard'
+import PersonCard from '../components/PersonCard.tsx'
 
 const About = () => {
   const people = [
@@ -23,16 +23,17 @@ const About = () => {
         <div>
           <h1 className="text-5xl pt-4 pb-4">About</h1>
         </div>
-        <p>
+        <p className="text-xl pt-4 pb-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
           possimus, dolore praesentium veritatis animi adipisci iure porro est,
           aut voluptatum, eveniet maiores id pariatur officiis! Maxime minus
           adipisci ut atque.
         </p>
       </div>
-      <div className="flex justify-center items-start gap-[25px] flex-wrap ">
+      <div className="flex justify-center items-start gap-[25px] flex-wrap">
         {people.map((person) => (
           <PersonCard
+            key={person.name}
             url={person.url}
             name={person.name}
             surname={person.surname}
