@@ -1,5 +1,5 @@
 import Hero from 'components/Hero'
-import About from './About'
+import About from '../components/About'
 import Gallery from 'components/Gallery'
 
 const Home = () => {

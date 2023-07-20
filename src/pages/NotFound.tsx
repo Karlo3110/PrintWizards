@@ -17,14 +17,14 @@ const NotFound = () => {
   }, [])
 
   return (
-    <section className="w-full mt-20 h-[60vh] mb-10 md:mb-[150px] flex justify-center items-center flex-col gap-8">
+    <section className="w-full h-[80vh] flex justify-center items-center flex-col gap-8 not-found-bg">
       <div>
-        <h1 className="text-5xl md:text-7xl text-center text-bold">
+        <h1 className="text-5xl md:text-8xl text-center text-bold">
           404 - Page Not Found
         </h1>
       </div>
       <div>
-        <h1>{randomMessage}</h1>
+        <h1 className="text-3xl">{randomMessage}</h1>
       </div>
     </section>
   )

@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const location = useLocation()
 
   return (

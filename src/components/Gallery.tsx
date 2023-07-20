@@ -4,9 +4,27 @@ import dragon from '../assets/images/dragonprint.jpg'
 import warrior1 from '../assets/images/warriordnd1.jpg'
 import warrior2 from '../assets/images/warriordnd2.jpg'
 import dices from '../assets/images/dnddiceset.jpg'
+import wand from '../assets/images/wand.jpg'
 
-const Gallery = () => {
-  const galleryImages = [
+type GalleryImage = {
+  name: string
+  src: string
+  alt: string
+  description: string
+  instagram: string
+  price: string
+}
+
+const Gallery: React.FC = () => {
+  const galleryImages: GalleryImage[] = [
+    {
+      name: 'Elder Wand',
+      src: wand,
+      alt: 'wand',
+      description: 'Resin print - Elder Wand + coloring',
+      instagram: 'https://www.instagram.com/p/CurbZXjLC0j',
+      price: '30 €'
+    },
     {
       name: 'Articulated dragon',
       src: dragon,
@@ -51,15 +69,16 @@ const Gallery = () => {
           ? galleryImages.map((image) => (
               <div
                 key={image.alt}
-                className="flex flex-col justify-center items-center w-[300px] md:w-[400px] m-4 gap-4"
+                className="flex flex-col justify-center items-center w-[300px] md:w-[400px] m-4 gap-4 "
               >
                 <a
                   href={image.instagram}
                   target="_blank"
-                  className=" hover:scale-[102%] transition-all"
+                  className=" hover:scale-[103%] transition-all"
                 >
                   <img
                     className="rounded-md shadow-xl"
+                    loading="lazy"
                     key={image.alt}
                     src={image.src}
                     alt={image.alt}
